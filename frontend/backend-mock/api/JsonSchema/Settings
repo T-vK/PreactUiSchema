@@ -1,0 +1,13 @@
+{
+  "title": "Settings",
+  "properties": {
+    "ssid": {
+      "type": "string",
+      "default": "Hans"
+    },
+    "password": {
+      "type": "string",
+      "default": "Hans"
+    }
+  }
+}
