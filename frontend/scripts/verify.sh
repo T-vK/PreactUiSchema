@@ -5,11 +5,11 @@ rm -f ./verify.cpp ./verify
 
 # Create verify.cpp
 cat <<EOF > ./verify.cpp
-#include "html.h"
+#include "dist/html.h"
 #include <iostream>
 
 int main() {
-  std::cout.write(reinterpret_cast<const char*>(index_html_br), index_html_br_len);
+  std::cout.write(reinterpret_cast<const char*>(dist_index_html_br), dist_index_html_br_len);
   return 0;
 }
 EOF

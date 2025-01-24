@@ -2,3 +2,5 @@ node_modules
 dist/index.html.br
 backend-mock/index.html
 backend-mock/index.html.br
+verify.cpp
+verify

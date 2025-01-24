@@ -30,7 +30,7 @@ npm run dev
 ## Advanced
 
 
-## Generate the html.h file for a custom Entity
+### Generate the html.h file for a custom Entity
 
 ```bash
 cd frontend
@@ -38,3 +38,13 @@ ENTITY=OtherSettings npm run build
 ```
 
 `ENTITY` defaults to `Settings` if not set.
+
+## How to use the generated html.h file
+
+```C++
+#include "dist/html.h"
+
+for (int i = 0; i < dist_index_html_br_len; i++) {
+    Serial.print(dist_index_html_br[i], HEX);
+}
+```
